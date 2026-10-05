@@ -1,0 +1,9 @@
+{
+  "cylinders": 4,
+  "displacement_l": 1.6,
+  "horsepower": 88,
+  "weight_kg": 1100,
+  "acceleration_s": 15.5,
+  "model_year": 1980,
+  "origin": "japan"
+}

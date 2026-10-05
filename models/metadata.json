@@ -1,0 +1,85 @@
+{
+  "selected_model": "random_forest",
+  "features": [
+    "cylinders",
+    "displacement_l",
+    "horsepower",
+    "weight_kg",
+    "acceleration_s",
+    "model_year",
+    "origin"
+  ],
+  "units": {
+    "cylinders": "count",
+    "displacement_l": "L",
+    "horsepower": "hp",
+    "weight_kg": "kg",
+    "acceleration_s": "seconds 0-60 mph",
+    "model_year": "year",
+    "origin": "usa/europe/japan"
+  },
+  "target": "fuel_l_per_100km",
+  "train_rows": 318,
+  "test_rows": 80,
+  "random_state": 42,
+  "metrics": {
+    "mae": 0.8328254433507845,
+    "rmse": 1.2006448011810162,
+    "r2": 0.9060138803067034
+  },
+  "baseline_test_mae": 3.1448423947279616,
+  "cv_results": [
+    {
+      "model": "random_forest",
+      "cv_mae": 0.9265747216768027,
+      "cv_std": 0.10721044139182274,
+      "parameters": "{\"model__max_depth\": null, \"model__min_samples_leaf\": 1}"
+    },
+    {
+      "model": "ridge",
+      "cv_mae": 0.9902046043123995,
+      "cv_std": 0.12234722879780312,
+      "parameters": "{\"model__alpha\": 10}"
+    },
+    {
+      "model": "baseline",
+      "cv_mae": 3.2311426869031505,
+      "cv_std": 0.1868888130100241,
+      "parameters": "{}"
+    }
+  ],
+  "ranges": {
+    "cylinders": [
+      3.0,
+      8.0
+    ],
+    "displacement_l": [
+      1.114320352,
+      7.45611412
+    ],
+    "horsepower": [
+      46.0,
+      225.0
+    ],
+    "weight_kg": [
+      731.6444928100001,
+      2331.4647818000003
+    ],
+    "acceleration_s": [
+      8.0,
+      24.8
+    ],
+    "model_year": [
+      1970.0,
+      1982.0
+    ]
+  },
+  "versions": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "matplotlib": "3.11.2",
+    "scikit-learn": "1.9.1",
+    "joblib": "1.6.0"
+  },
+  "python": "3.12.14"
+}
