@@ -1,0 +1,6 @@
+data/raw/
+data/processed/
+models/
+reports/
+.ipynb_checkpoints/
+__pycache__/

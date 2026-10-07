@@ -1,5 +1,7 @@
 # Dự đoán tiêu hao nhiên liệu của xe
 
+Dự án thứ hai: [Dự đoán quãng đường di chuyển của cầu thủ sau trận](football-distance/README.md).
+
 Dự án học Supervised Learning / Regression bằng Python, pandas, NumPy, Matplotlib và scikit-learn. Notebook giải thích bằng tiếng Việt, dùng cùng module Python với dòng lệnh.
 
 ## Chạy trên Windows PowerShell
